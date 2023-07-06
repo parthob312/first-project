@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Basic Language of the Web: HTML</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <h1>📘 The Code Magazine</h1>
       <nav>
         <a href="blog.html">Blog</a>
@@ -15,21 +16,23 @@
         <a href="#">CSS Grid</a>
       </nav>
     </header>
-    <section>
-      <h2>The Basic Language of the Web: HTML</h2>
-      <img
-        src="images/laura-jones.jpg"
-        alt="laura-jones"
-        width="50px"
-        height="50px"
-      />
-      <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
-      <img
-        src="images/post-img.jpg"
-        alt="post-img"
-        width="500px"
-        height="200px"
-      />
+    <article>
+      <header>
+        <h2>The Basic Language of the Web: HTML</h2>
+        <img
+          src="images/laura-jones.jpg"
+          alt="laura-jones"
+          width="50px"
+          height="50px"
+        />
+        <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+        <img
+          src="images/post-img.jpg"
+          alt="post-img"
+          width="500px"
+          height="200px"
+        />
+      </header>
       <p>
         All modern websites and web applications are built using three
         <em>fundamental</em> technologies: HTML, CSS and JavaScript. These are
@@ -81,10 +84,10 @@
         <li>To have fun 😃</li>
       </ul>
       <p>Hopefully you learned something new here. See you next time!</p>
-    </section>
-    <section>
+    </article>
+    <aside>
       <h4>Related posts</h4>
-      <ul>
+      <ul class="related">
         <li>
           <img
             src="images/related-1.jpg"
@@ -93,7 +96,7 @@
             height="75px"
           />
           <a href="">How to Learn Web Development</a>
-          <p>By Jonas Schmedtmann</p>
+          <p class="related-author">By Jonas Schmedtmann</p>
         </li>
         <li>
           <img
@@ -103,7 +106,7 @@
             height="75px"
           />
           <a href="#">The Unknown Powers of CSS</a>
-          <p>By Jim Dillon</p>
+          <p class="related-author">By Jim Dillon</p>
         </li>
         <li>
           <img
@@ -113,12 +116,12 @@
             height="75px"
           />
           <a href="#">Why JavaScript is Awesome</a>
-          <p>By Matilda</p>
+          <p class="related-author">By Matilda</p>
         </li>
       </ul>
-    </section>
+    </aside>
     <footer>
-      <p>Copyright © 2027 by The Code Magazine.</p>
+      <p id="copyright">Copyright © 2027 by The Code Magazine.</p>
     </footer>
   </body>
 </html>
